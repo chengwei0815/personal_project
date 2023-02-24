@@ -18,8 +18,6 @@ Reflection:
 What was the context for this project?
 The STARTALK program is a federally funded initiative aimed at teaching critical languages to students. The program's website was outdated and difficult to navigate, resulting in low engagement and frustration for users. As a web designer and a supporter of the STARTALK program, I decided to take on the project of redesigning the website to better serve the needs of its users.
 
-The STARTALK program is a federally funded initiative aimed at teaching critical languages to students. The program's website was outdated and difficult to navigate, resulting in low engagement and frustration for users. As a web designer and a supporter of the STARTALK program, I decided to take on the project of redesigning the website to better serve the needs of its users.
-
 What did you set out to build?
 I set out to redesign the STARTALK website to improve the user experience, navigation, and accessibility. The website needed to be more user-friendly, visually appealing, and easy to navigate for teachers, students, and parents seeking information about the STARTALK program and its offerings.
 
