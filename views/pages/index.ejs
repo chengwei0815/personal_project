@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangor Chinese School</title>
-    <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5f58663a3c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap" rel="stylesheet">
-    <script defer src="./public/script/script.js"></script>
-</head>
-<body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="./public/images/logo.png" alt="A dragon made of stone against a backdrop of fiery red"></a>
-            <div class="menu-links" id="menu_links">
-                <i class="fa fa-times fa-2x" onclick="uncollapse_menu()"></i>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="course.html">PROGRAM</a></li>
-                        <li><a href="community.html">SERVICE</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-            </div>
-            <i class="fa-solid fa-bars fa-2x" onclick="collapse_menu()"></i>
-        </nav>
+<%- include('../partials/head') -%>
 
-        <div class="text-area">
-            <h1>BANGOR CHINESE SCHOOL</h1>
-            <p>Language & Cultural Center<br>A Nonprofit Organization</p>
-            <a href="course.html" class="call-to-action-btn">APPLY NOW</a>
-        </div>
-    </section>
+<%- include('../partials/navbar-index') -%>
 
     <!-- Programs Offered -->
     <section class="programs">
@@ -46,14 +11,14 @@
                 <h3>Summer Camp</h3>
                 <p>This camp provides a standards-based, student-centered, intensive summer Chinese language and culture curriculum for
                 children through an immersion model that will make learning the language fun and unforgettable.</p>
-                <a href="camp.html" class="call-to-action-btn red-btn">More</a>
+                <a href="/camp" class="call-to-action-btn red-btn">More</a>
             </div>
             <div class="programs-col">
                 <h3>Summer Teacher Training</h3>
                 <p>With fifteen (15) years of experience in STARTALK Chinese teacher training, the Bangor Chinese School/CLCCM offer this
                 program to provide professional/best practice to teachers to improve their daily teaching in the classroom, and to reach
                 each of their goals in teaching Chinese language and culture to our young generation.</p>
-                <a href="teacher.html" class="call-to-action-btn red-btn">More</a>
+                <a href="/teacher" class="call-to-action-btn red-btn">More</a>
             </div>
             <div class="programs-col">
                 <h3>Study Abroad</h3>
@@ -61,7 +26,7 @@
                 to learn Chinese language and experience Chinese culture by first hand in China during the summer of 2023. This is a
                 language immersion program. We encourage Chinese learners with a passion for learning the language, communicating across
                 cultures, and living abroad to apply.</p>
-                <a href="abroad.html" class="call-to-action-btn red-btn">More</a>
+                <a href="/abroad" class="call-to-action-btn red-btn">More</a>
             </div>
         </div>
     </section>
@@ -73,7 +38,7 @@
         <p>"If the 19th century belonged to Britain, and the 20th century to the United States, then the 21st century will surely belong to China. My advice: Make sure you and your kids learn Chinese." - Jim Rogers, Worth Magazine</p>
         <div class="row">
             <div class="classes-col">
-                <img src="./public/images/Screen Shot 2023-02-24 at 11.26.26 PM.png" alt="Chinese brush calligraphy">
+                <img src="/images/Screen Shot 2023-02-24 at 11.26.26 PM.png" alt="Chinese brush calligraphy">
                 <div class="layer">
                     <h3>Classes in Bangor</h3>
                     <p>Language Courses Offered:</p>
@@ -87,7 +52,7 @@
                 </div>
             </div>
             <div class="classes-col">
-                <img src="./public/images/Screen Shot 2023-02-24 at 11.26.53 PM.png" alt="Shanghai city view">
+                <img src="/images/Screen Shot 2023-02-24 at 11.26.53 PM.png" alt="Shanghai city view">
                 <div class="layer">
                     <h3>Classes in Portland</h3>
                     <p>As the time is in the head of the Dragon, the Chinese Language and Culture Center of Maine (CLCCM) is glad to announce
@@ -98,7 +63,7 @@
                 </div>
             </div>
             <div class="classes-col">
-                <img src="./public/images/Screen Shot 2023-02-24 at 11.18.23 PM.png" alt="World languages in tags">
+                <img src="/images/Screen Shot 2023-02-24 at 11.18.23 PM.png" alt="World languages in tags">
                 <div class="layer">
                     <h3>Other Languages</h3>
                     <p>The entry-level coures are for students with little or no prior experience in the languages. The course was designed
@@ -118,7 +83,7 @@
 
         <div class="row">
             <div class="news-col">
-                <img src="./public/images/Screen Shot 2023-02-25 at 1.12.34 AM.png" alt="Kids wear backpacks as they go to school">
+                <img src="/images/Screen Shot 2023-02-25 at 1.12.34 AM.png" alt="Kids wear backpacks as they go to school">
                 <h3>Bangor Chinese School celebrates the year of the rabbit (1/22/2023)</h3>
                 <p>BANGOR, Maine — People came together in Bangor Sunday afternoon to welcome the Chinese New Year. The year of the rabbit
                 is expected to bring some calmness to our lives, as it symbolizes peace, happiness, and health.<br>
@@ -146,7 +111,7 @@
                 "I think as a Chinese American, [we have] an obligation to share the language and the culture," Zhang said.</p>
             </div>
             <div class="news-col">
-                <img src="./public/images/Screen Shot 2023-02-25 at 1.13.11 AM.png" alt="The Great Wall">
+                <img src="/images/Screen Shot 2023-02-25 at 1.13.11 AM.png" alt="The Great Wall">
                 <h3>Kids learning second language this summer at Bangor Chinese School (6/27/2022)</h3>
                 <p>BANGOR, Maine (WABI) - School is out for the summer for most kids, but for some it means picking up a second language at
                 the Bangor Chinese School's dragon camp.<br>
@@ -177,7 +142,7 @@
                 your resources, everything and even the chance of success is doubled,” Zhang said.</p>
             </div>
             <div class="news-col">
-                <img src="./public/images/Screen Shot 2023-02-25 at 1.16.53 AM.png" alt="A stone lion in front of the city temple">
+                <img src="/images/Screen Shot 2023-02-25 at 1.16.53 AM.png" alt="A stone lion in front of the city temple">
                 <h3>Celebrate the Chinese Lunar New Year (2/2/2022)</h3>
                 <p>BANGOR — As we head into the new month, celebrations are underway to welcome the Year of the Tiger, also known as the
                 Chinese Lunar New Year.
@@ -223,7 +188,7 @@
 
         <div class="row">
             <div class="feedback-col">
-                <img src="./public/images/Screen Shot 2023-02-25 at 1.43.29 AM.png" alt="John Baldacci, Former Governor of Maine">
+                <img src="/images/Screen Shot 2023-02-25 at 1.43.29 AM.png" alt="John Baldacci, Former Governor of Maine">
                 <div>
                     <p>"China, in particular is an important nation to understand. It is an ever-emerging economic player, even as its culture
                     - with thousands of years of history - is transforming as a result."</p>
@@ -236,7 +201,7 @@
                 </div>
             </div>
             <div class="feedback-col">
-                <img src="./public/images/Screen Shot 2023-02-25 at 1.44.43 AM.png" alt="Mel Mackay, Head of School, John Bapst School">
+                <img src="/images/Screen Shot 2023-02-25 at 1.44.43 AM.png" alt="Mel Mackay, Head of School, John Bapst School">
                 <div>
                     <p>"Learning Chinese is opening up an entire world to me. Two trips to China and I'm hooked! Thank you, Bangor Chinese
                     School"</p>
@@ -249,7 +214,7 @@
                 </div>
             </div>
             <div class="feedback-col">
-                <img src="./public/images/IMG_0197.jpg" alt="Michael Riedel, U.S. Diplomat">
+                <img src="/images/IMG_0197.jpg" alt="Michael Riedel, U.S. Diplomat">
                 <div>
                     <p>“From 2011-2012, I selected the Bangor Chinese School as the institute for my Chinese language training to prepare for
                     my 4-year foreign services in China. It is not only the professional place that helped me fully and successfully reach
@@ -269,56 +234,10 @@
     <!-- Contact -->
     <section class="contact">
         <h1>Love Is our Common Language!</h1>
-        <a href="contact.html" class="call-to-action-btn">Contact Us</a>
+        <a href="/contact" class="call-to-action-btn">Contact Us</a>
     </section>
 
-    <section class="footer-camp">
-        <h4>About Us</h4>
-        <p>Chinese and Americans Are Good Friends Forever!</p>
-        <div class="icons"></div>
-    </section>
-
-    <!-- Footer -->
-    <section class="footer">
-       <div class="box-container">
-        <div class="box">
-            <h2> Quick Links</h2>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="course.html">PROGRAM</a>
-            <a href="community.html">SERVICE</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
-
-        <div class="box">
-            <h2> Location</h2>
-            <a href="">Bangor Chinese School</a>
-            <a href="">53 Cumberland Street</a>
-            <a href="">Bangor, ME 04401</a>
-        </div>
-
-        <div class="box">
-            <h2> Contact Us</h2>
-            <a href=""><i class="fa-solid fa-phone"></i> Phone: (207) 990-0710</a>
-            <a href=""><i class="fa-solid fa-fax"></i> FAX: (207) 990-5158</a>
-            <a href=""><i class="fa-solid fa-envelope"></i> Email: jingzhang@bangorchinese.com</a>
-            <a href=""><i class="fa-brands fa-skype"></i> Skype: stskype9</a>
-        </div>
-
-        <div class="box">
-            <h2> Follow Us</h2>
-            <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
-            <a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
-            <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        </div>
-       </div>
-
-    <div class="created"> This site is designed and maintained with <i class="fa-regular fa-heart"></i> by <span>Wei Cheng
-        </span></div>
-    </section>
-</body>
-</html>
+<%- include('../partials/footer') -%>
 
 
 <!-- Personal project:

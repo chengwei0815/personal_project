@@ -1,38 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEACHER PROGRAM | Bangor Schinese School</title>
-    <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5f58663a3c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap"
-        rel="stylesheet">
-    <script defer src="./public/script/script.js"></script>
-</head>
-
-<body>
-    <section class="sub-header">
-        <nav>
-            <a href="index.html"><img src="./public/images/logo.png"
-                    alt="logo: CLCC - Chinese Language Culture Center"></a>
-            <div class="menu-links" id="menu_links">
-                <i class="fa fa-times fa-2x" onclick="uncollapse_menu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">PROGRAM</a></li>
-                    <li><a href="community.html">SERVICE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <i class="fa-solid fa-bars fa-2x" onclick="collapse_menu()"></i>
-        </nav>
+<%- include('../partials/head') -%>
+<%- include('../partials/navbar-leaf') -%>
         <h1>Teacher Training Program</h1>
 
     </section>
@@ -43,19 +10,19 @@
         <p>Sponsored by BANGOR CHINESE SCHOOL and CLCCM</p>
         <div class="row">
             <div class="classes-col teacher-col">
-                <img src="./public/images/oriento-9liwg84HmwU-unsplash.jpg" alt="Chinese tea cup and bamboo">
+                <img src="/images/oriento-9liwg84HmwU-unsplash.jpg" alt="Chinese tea cup and bamboo">
                 <div class="layer-teacher">
                     <h3>3 Credits or 6 CEUs</h3>
                 </div>
             </div>
             <div class="classes-col teacher-col">
-                <img src="./public/images/il-vagabiondo-AZGTZne6aOY-unsplash.jpg" alt="The ancient pagoda of a Chinese small town">
+                <img src="/images/il-vagabiondo-AZGTZne6aOY-unsplash.jpg" alt="The ancient pagoda of a Chinese small town">
                 <div class="layer-teacher">
                     <h3>For Teachers of Chinese, Potential Chinese Teachers and Interested Others</h3>
                 </div>
             </div>
             <div class="classes-col teacher-col">
-                <img src="./public/images/max-van-den-oetelaar-iyTHrdzcu0Q-unsplash.jpg" alt="coocking tea">
+                <img src="/images/max-van-den-oetelaar-iyTHrdzcu0Q-unsplash.jpg" alt="coocking tea">
                 <div class="layer-teacher">
                     <h3>At Husson University</h3>
                 </div>
@@ -137,51 +104,4 @@
         </div>
     </section>
 
-    <section class="footer-camp">
-        <h4>About Us</h4>
-        <p>Chinese and Americans Are Good Friends Forever!</p>
-        <div class="icons"></div>
-    </section>
-
-    <!-- Footer -->
-    <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h2> Quick Links</h2>
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="course.html">PROGRAM</a>
-                <a href="community.html">SERVICE</a>
-                <a href="contact.html">CONTACT</a>
-            </div>
-
-            <div class="box">
-                <h2> Location</h2>
-                <a href="">Bangor Chinese School</a>
-                <a href="">53 Cumberland Street</a>
-                <a href="">Bangor, ME 04401</a>
-            </div>
-
-            <div class="box">
-                <h2> Contact Us</h2>
-                <a href=""><i class="fa-solid fa-phone"></i> Phone: (207) 990-0710</a>
-                <a href=""><i class="fa-solid fa-fax"></i> FAX: (207) 990-5158</a>
-                <a href=""><i class="fa-solid fa-envelope"></i> Email: jingzhang@bangorchinese.com</a>
-                <a href=""><i class="fa-brands fa-skype"></i> Skype: stskype9</a>
-            </div>
-
-            <div class="box">
-                <h2> Follow Us</h2>
-                <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
-                <a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
-                <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            </div>
-        </div>
-
-        <div class="created"> This site is designed and maintained with <i class="fa-regular fa-heart"></i> by <span>Wei Cheng
-            </span></div>
-    </section>
-</body>
-
-</html>
+<%- include('../partials/footer') -%>
