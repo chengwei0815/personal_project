@@ -1,5 +1,5 @@
 {
-  "name": "bangor-school-personal-project-wei",
+  "name": "bangor-school-project-wei",
   "version": "1.0.0",
   "description": "A project aimed at redesigning the Bangor Chinese School website to provide a better user experience, increase engagement, and better serve the needs of its users.",
   "main": "app.js",
@@ -12,10 +12,10 @@
     "url": "git+https://github.com/chengwei0815/personal_project.git"
   },
   "keywords": [
-    "Bangor",
-    "Chinese"
+    "Education",
+    "Language"
   ],
-  "author": "Wei Chinese",
+  "author": "Wei Cheng",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chengwei0815/personal_project/issues"
@@ -26,7 +26,7 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "method-override": "^3.0.0",
-    "mongoose": "^7.1.1",
+    "mongoose": "^6.2.10",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
