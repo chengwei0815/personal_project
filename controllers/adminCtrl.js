@@ -1,3 +1,4 @@
+const siteData=require('../data/data')
 const Course = require('../models/course-model');
 
 module.exports = {
@@ -33,7 +34,7 @@ module.exports = {
             }
         })
     },
-    
+
 
 
 

@@ -15,8 +15,18 @@ module.exports = {
     },
 
     course_create_post: (req, res) => {
-        const{title, }
-    }
+        const { courseName, about, date, location, moreInfor } = request.body;
+        const newCourse = new Course({
+            courseName: courseName,
+            about: about,
+            date: date,
+            location: location,
+            moreInfor: moreInfor
+        });
+
+        newCourse.save();
+        res.redirect('/admin/admin-books');
+    },
 
 
 }
