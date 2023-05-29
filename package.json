@@ -1,15 +1,15 @@
 {
-  "name": "bangor-school-project-wei",
+  "name": "bangor-school-project-2023",
   "version": "1.0.0",
-  "description": "A project aimed at redesigning the Bangor Chinese School website to provide a better user experience, increase engagement, and better serve the needs of its users.",
+  "description": "Redesigning the Bangor Chinese School website - Wei Cheng - 2023",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chengwei0815/personal_project.git"
+    "type": "git"
   },
   "keywords": [
     "Education",
@@ -17,17 +17,20 @@
   ],
   "author": "Wei Cheng",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chengwei0815/personal_project/issues"
-  },
-  "homepage": "https://github.com/chengwei0815/personal_project#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "method-override": "^3.0.0",
     "mongoose": "^6.3.0",
-    "morgan": "^1.10.0"
+    "mongoose-findorcreate": "^4.0.0",
+    "mongoose-morgan": "^1.0.17",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22",
