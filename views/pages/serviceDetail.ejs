@@ -1,0 +1,27 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-leaf') -%>
+
+     <h1>Services Detail</h1>
+
+    </section>
+
+    <section class="programs">
+        <h3><%= serviceItem.serviceName %></h3>
+
+        <div class="row">
+             <h3><%= serviceItem.serviceName %></h3>
+          <p>Service Detail</p>
+        </div>
+    </section>
+
+    <main>
+    <p><strong>Course Name: </strong><%= serviceItem.serviceName %></p>
+    <p><strong>About the Course:</strong> <%= serviceItem.content %></p>
+
+
+    <a href="/services" class="btn">back to services</a>
+    </main>
+
+
+<%- include('../partials/footer') -%>

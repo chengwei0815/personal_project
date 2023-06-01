@@ -13,16 +13,29 @@ module.exports = {
       response.redirect("/login");
     }
   },
+
+  logout: (request, response) => {
+    // new code as of 6/2022 - the correct logout function
+    request.logout(function (error) {
+      // destroy the session for the user
+      if (error) {
+        return next(error);
+      }
+      // redirect back to the homepage
+      response.redirect("/");
+    });
+  },
+
   admin_courses: (request, response) => {
     Course.find({}, (error, allCourses) => {
       if (error) {
         return error;
       } else {
         // if (request.isAuthenticated()) {
-          response.render("pages/adminCourses", {
-            copyrightYear: siteData.year,
-            courseArray: allCourses,
-          });
+        response.render("pages/adminCourses", {
+          copyrightYear: siteData.year,
+          courseArray: allCourses,
+        });
         // } else {
         //   console.log("There is an error.");
         //   response.redirect("/login");
@@ -41,10 +54,10 @@ module.exports = {
         return error;
       } else {
         // if (request.isAuthenticated()) {
-          response.render("pages/adminServices", {
-            copyrightYear: siteData.year,
-            serviceArray: allServices,
-          });
+        response.render("pages/adminServices", {
+          copyrightYear: siteData.year,
+          serviceArray: allServices,
+        });
         // } else {
         //   console.log("There is an error.");
         //   response.redirect("/login");
@@ -64,10 +77,10 @@ module.exports = {
         return error;
       } else {
         // if (request.isAuthenticated()) {
-          response.render("pages/updateCourse", {
-            copyrightYear: siteData.year,
-            foundCourse: foundCourse,
-          });
+        response.render("pages/updateCourse", {
+          copyrightYear: siteData.year,
+          foundCourse: foundCourse,
+        });
         // } else {
         //   console.log("There is an error.");
         //   response.redirect("/login");
@@ -82,10 +95,10 @@ module.exports = {
         return error;
       } else {
         // if (request.isAuthenticated()) {
-          response.render("pages/updateService", {
-            // copyrightYear: siteData.year,
-            foundService: foundService,
-          });
+        response.render("pages/updateService", {
+          // copyrightYear: siteData.year,
+          foundService: foundService,
+        });
         // } else {
         //   console.log("There is an error.");
         //   response.redirect("/login");

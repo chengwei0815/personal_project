@@ -1,0 +1,29 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-leaf') -%>
+
+     <h1>Course Detail</h1>
+
+    </section>
+
+    <section class="programs">
+        <h3><%= courseItem.courseName %></h3>
+
+        <div class="row">
+             <h3><%= courseItem.courseName %></h3>
+          <p>Course Detail</p>
+        </div>
+    </section>
+
+    <main>
+    <p><strong>Course Name: </strong><%= courseItem.courseName %></p>
+    <p><strong>About the Course:</strong> <%= courseItem.about %></p>
+    <p><strong>Date and Time:</strong> $<%= courseItem.date %></p>
+    <p><strong>Location:</strong> <%= courseItem.location %></p>
+    <p><strong>More Information about the Course:</strong> <%= courseItem.moreInfor %></p>
+
+    <a href="/courses" class="btn">back to courses</a>
+    </main>
+
+
+<%- include('../partials/footer') -%>

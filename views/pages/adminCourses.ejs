@@ -1,0 +1,26 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-leaf') -%>
+
+     <h1>Admin Courses</h1>
+
+    </section>
+
+    <!-- Programs Offered for Children-->
+    <section class="programs">
+        <h1>Admin Courses</h1>
+
+        <div class="row">
+             <% for (course of courseArray)  { %>
+                <h3><%= course.courseName %></h3>
+                <a href="./<%= course._id %>/edit-course" class="call-to-action-btn red-btn">
+                <div class="programs-col">Edit</div>
+            </a>
+            <form action="'/courses/<%= course._id %>? _method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+                <button class="call-to-action-btn red-btn" type="submit">Delete</button>
+            </form>
+            <% } %>
+        </div>
+    </section>
+
+<%- include('../partials/footer') -%>

@@ -1,0 +1,37 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-leaf') -%>
+
+    <h1>Update Services</h1>
+</section>
+    <!-- Create Course -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <main>
+                <h1> <span>Update Services</span> </h1>
+                <form action="/services/<%= foundService._id %>?_method=PUT" method="POST">
+                <div>
+                    <label for="serviceName">serviceName: </label>
+                    <input type="text" name="serviceName" id="serviceName" minlength="1" value="<%= foundService.serviceName %>" required />
+                </div>
+
+                <div>
+                    <label for="content">About the course: </label>
+                    <input type="text" name="content" id="content" minlength="5" value="<%= foundService.content %>" required />
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit"/>
+                </div>
+
+            </form>
+            </main>
+            </div>
+            <div class="about-col">
+                <img src="/images/Screen Shot 2023-02-25 at 3.38.52 PM.png" alt="a colorful rainbow fish">
+            </div>
+        </div>
+    </section>
+
+<%- include('../partials/footer') -%>

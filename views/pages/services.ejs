@@ -1,0 +1,22 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/navbar-leaf') -%>
+
+   <h1>Services</h1>
+</section>
+    <!-- Courses -->
+     <section class="programs">
+        <h1>Services List</h1>
+
+        <div class="row">
+            <% for (service of serviceArray) { %>
+                <a href="/services/<%= service._id %>" class="call-to-action-btn red-btn">
+                    <div class="programs-col">
+                        <h3><%= service.courseName %></h3>
+                    </div>
+                </a>
+            <% } %>
+
+        </div>
+    </section>
+
+<%- include('../partials/footer') -%>

@@ -1,0 +1,33 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/navbar-leaf') -%>
+    <h1>Courses</h1>
+</section>
+    <!-- Courses -->
+     <section class="programs">
+        <h1>Courses List</h1>
+
+        <div class="row">
+            <% for (course of courseArray) { %>
+                <a href="/courses/<%= course._id %>" class="call-to-action-btn red-btn">
+                    <div class="programs-col">
+                        <h3><%= course.courseName %></h3>
+                        <p><%= course.date %></p>
+                    </div>
+                </a>
+            <% } %>
+
+            <!-- <a href="/admin/admin-courses" class="call-to-action-btn red-btn">
+                <div class="programs-col">
+                    <h3>Course Listing</h3>
+                </div>
+            </a>
+
+            <a href="/admin/admin-services" class="call-to-action-btn red-btn">
+                <div class="programs-col">
+                    <h3>Services Listing</h3>
+                </div>
+            </a> -->
+        </div>
+    </section>
+
+<%- include('../partials/footer') -%>
