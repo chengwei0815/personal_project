@@ -21,10 +21,10 @@ module.exports = {
             if (error) {
                 return error;
             } else {
-                response.render('pages/serviceDetail', {
-                    name: siteData.userName,
-                    copyrightYear: siteData.year,
-                    service: foundService
+                response.render("pages/serviceDetail", {
+                  name: siteData.userName,
+                  copyrightYear: siteData.year,
+                  serviceItem: foundService,
                 });
             }
         })
@@ -45,15 +45,17 @@ module.exports = {
             $set: {
                 serviceName: serviceName,
                 content:content
-            }
-        }, { new: true }, error => {
-            if(error){
-                return error;
-            } else {
-                response.redirect('/admin/admin-services');
-            }
-        })
-    },
+            },
+        }, { new: true },
+      (error) => {
+        if (error) {
+          return error;
+        } else {
+          response.redirect("/admin/admin-authors");
+        }
+      }
+    );
+  },
     service_delete: (request, response) => {
         const { _id } = request.params;
         Service.deleteOne({ _id: _id }, error => {

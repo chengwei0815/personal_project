@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 const serviceSchema = new Schema({
     serviceName: {
         type: String,
-        required: [tue, 'A service name is required.'],
+        required: [true, 'A service name is required.'],
         minlength: [1, 'Minimum length for the service name is 1 character.']
     },
     content: {
@@ -13,4 +13,4 @@ const serviceSchema = new Schema({
     },
 });
 const Service = mongoose.model('Service', serviceSchema);
-module.exports = Author;
+module.exports = Service;

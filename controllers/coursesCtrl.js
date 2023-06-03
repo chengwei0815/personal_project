@@ -1,5 +1,5 @@
 const siteData = require('../data/siteData');
-const Course = req('../models/courseModel');
+const Course = require('../models/courseModel');
 
 module.exports = {
     all_courses: (request, response) => {
@@ -16,7 +16,7 @@ module.exports = {
     },
     course_detail: (request, response) => {
         const { _id } = request.params;
-        Course.findOnce({ _id: _id }, (error, foundCourse) => {
+        Course.findOne({ _id: _id }, (error, foundCourse) => {
             if (error) {
                 return error;
             } else {

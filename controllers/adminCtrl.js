@@ -4,14 +4,14 @@ const Service = require("../models/serviceModel");
 
 module.exports = {
   admin: (request, response) => {
-    if (request.isAuthenticated()) {
+    // if (request.isAuthenticated()) {
       response.render("pages/admin", {
         copyrightYear: siteData.year,
       });
-    } else {
-      console.log("There is an error.");
-      response.redirect("/login");
-    }
+    // } else {
+    //   console.log("There is an error.");
+    //   response.redirect("/login");
+    // }
   },
 
   logout: (request, response) => {
