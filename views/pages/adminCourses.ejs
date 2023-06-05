@@ -2,24 +2,26 @@
 
 <%- include('../partials/navbar-tower-admin') -%>
 
-     <h1>Admin Courses</h1>
+     <h1>Admin - Courses</h1>
 
     </section>
 
     <!-- Programs Offered for Children-->
-    <section class="programs">
-        <h1>Admin Courses</h1>
+    <section class="main-content" id="main-content">
+        <div class="main-content-layout">
 
-        <div class="row">
-             <% for (course of courseArray)  { %>
-                <h3><%= course.courseName %></h3>
-                <a href="./<%= course._id %>/edit-course" class="call-to-action-btn red-btn">
-                <div class="programs-col">Edit</div>
-            </a>
-            <form action="'/courses/<%= course._id %>? _method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
-                <button class="call-to-action-btn red-btn" type="submit">Delete</button>
-            </form>
-            <% } %>
+        <% for (course of courseArray)  { %>
+            <div class="box">
+            <div class="content">
+                <h2><%= course.courseName %></h2>
+                <a href="./<%= course._id %>/edit-course" class="call-to-action-btn red-btn">Edit</a>
+
+                <form action="/courses/<%= course._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+                    <button class="call-to-action-btn red-btn" type="submit">Delete</button>
+                </form>
+            </div>
+            </div>
+        <% } %>
         </div>
     </section>
 

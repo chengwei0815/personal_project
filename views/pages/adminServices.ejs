@@ -2,25 +2,31 @@
 
 <%- include('../partials/navbar-tower-admin') -%>
 
-     <h1>Admin Services</h1>
+     <h1>Admin - Services</h1>
 
     </section>
 
     <!-- Programs Offered for Children-->
-    <section class="programs">
-        <h1>Admin Services</h1>
+    <section class="main-content" id="main-content">
+        <div class="main-content-layout">
 
-        <div class="row">
-             <% for (service of serviceArray)  { %>
-                <h3><%= service.serviceName %></h3>
-                <a href="./<%= service._id %>/edit-service" class="call-to-action-btn red-btn">
-                <div class="programs-col">Edit</div>
-            </a>
-            <form action="'/services/<%= service._id %>? _method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+        <% for (service of serviceArray)  { %>
+        <div class="box">
+        <div class="content">
+
+            <h2><%= service.serviceName %></h2>
+            <a href="./<%= service._id %>/edit-service" class="call-to-action-btn red-btn">Edit</a>
+
+            <form action="/services/<%= service._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
                 <button class="call-to-action-btn red-btn" type="submit">Delete</button>
             </form>
-            <% } %>
+        </div>
+        </div>
+        <% } %>
+
         </div>
     </section>
+
+
 
 <%- include('../partials/footer') -%>

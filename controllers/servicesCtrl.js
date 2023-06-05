@@ -51,7 +51,7 @@ module.exports = {
         if (error) {
           return error;
         } else {
-          response.redirect("/admin/admin-authors");
+          response.redirect("/admin/admin-services");
         }
       }
     );

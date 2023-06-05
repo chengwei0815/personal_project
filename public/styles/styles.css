@@ -4,14 +4,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* :root {
-    --teal: #006B6B;
-    --light-teal: #009E9E;
-    --yellow: #FCCF14;
-    --blue: #063C5E;
-    --grey: #C2C2C2;
-    --white: #FFFFFF;
-} */
+:root {
+    --pink: rgba(195, 55, 100);
+    --dark-color: rgb(168, 50, 88);
+    --header-pink: rgba(195, 55, 100, 0.8);
+    --header-blue: rgba(29, 38, 113, 0.8);
+    --black: #444;
+    --white: #fff;
+    --light-color: #666;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
 
 /* Color Theme Swatches in Hex */
 .My-Color-Theme-1-hex { color: #FF940D; }
@@ -761,29 +765,75 @@ teacher-col {
     font-size: 30px;
 }
 
-/* Login Page */
-.heading {
-    text-align: center;
-    margin-bottom: 2rem;
-    position: relative;
+
+/* Nre Added for Admin */
+.main-content .main-content-layout {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.heading::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: .01rem;
-    background: var(--black);
-    z-index: -1;
-}
-
-.heading span {
-    font-size: 3rem;
-    padding: .5rem 2rem;
-    color: var(--black);
-    background: #fff;
+.main-content .box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
     border: var(--border);
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.main-content .box:hover {
+    border: var(--border-hover);
+}
+
+.main-content .box .image img {
+    height: 15rem;
+}
+
+.main-content .box .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.main-content .box .content .author {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.main-content .box .content .price {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.main-content .box .content .stars i {
+    font-size: 1.5rem;
+    color: var(--pink);
+}
+
+.btn,
+input[type="submit"] {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--pink);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: var(--dark-color);
+}
+
+.content {
+    text-align: center;
+}
+
+.inline {
+    display: inline;
 }
