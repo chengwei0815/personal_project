@@ -5,11 +5,15 @@
     <h1>Update Course</h1>
 </section>
     <!-- Create Course -->
-    <section class="about-us">
+<section class="about-us">
         <div class="row">
-            <div class="about-col">
-                <main>
-                <h1> <span>Update Course</span> </h1>
+            <div class="contact-us-col">
+                <div class="about-col">
+                <img src="/images/annie-spratt-rdVLN3UFmpU-unsplash.jpg" alt="a colorful rainbow fish">
+            </div>
+            </div>
+
+            <div class="contact-us-col">
                 <form action="/courses/<%= foundCourse._id %>?_method=PUT" method="POST">
                 <div>
                     <label for="courseName">CourseName: </label>
@@ -33,20 +37,48 @@
 
                 <div>
                     <label for="moreInfor">More about the course:</label>
-                    <textarea class="text-area-label" name="moreInfor" id="moreInfor" placeholder="moreInfor"><%= foundCourse.moreInfor %></textarea>
+                    <textarea rows="8" class="text-area-label" name="moreInfor" id="moreInfor" placeholder="moreInfor"><%= foundCourse.moreInfor %></textarea>
                 </div>
 
                 <div>
-                    <input type="submit" value="Submit"/>
+                    <button type="submit" class="call-to-action-btn red-btn">Submit</button>
                 </div>
 
             </form>
-            </main>
-            </div>
-            <div class="about-col">
-                <img src="/images/Screen Shot 2023-02-25 at 3.38.52 PM.png" alt="a colorful rainbow fish">
-            </div>
+</div>
+
         </div>
     </section>
 
+    <!-- <section class="contact-us">
+        <div class="row">
+            <div class="contact-us-col">
+               <div class="about-col">
+                <img src="/images/Screen Shot 2023-02-25 at 3.38.52 PM.png" alt="a colorful rainbow fish">
+            </div>
+            </div>
+            <div class="contact-us-col">
+                <form action="/courses/<%= foundCourse._id %>?_method=PUT" method="POST">
+                    <label for="courseName">CourseName: </label><input type="text" name="courseName" id="courseName" minlength="1" value="<%= foundCourse.courseName %>" required />
+                    <label for="courseName">CourseName: </label>
+                    <input type="text" name="courseName" id="courseName" minlength="1" value="<%= foundCourse.courseName %>" required />
+                    <label for="date">Date and time: </label>
+                    <input type="text" name="date" id="date" min="1" value="<%= foundCourse.date %>"/>
+                    <label for="location">Location: </label>
+                    <input type="text" name="location" id="location" min="1" value="<%= foundCourse.location %>"/>
+                    <label for="moreInfor">More about the course:</label>
+                    <textarea rows="8" class="text-area-label" name="moreInfor" id="moreInfor" placeholder="moreInfor"><%= foundCourse.moreInfor %></textarea>
+                    <!-- <button type="submit" class="call-to-action-btn red-btn">Submit</button> -->
+
+
+                    <!-- <input type="submit" value="Submit"/> -->
+
+
+                </form>
+            </div>
+        </div>
+
+    </section> -->
+
 <%- include('../partials/footer') -%>
+0815.

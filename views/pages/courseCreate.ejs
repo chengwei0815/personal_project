@@ -4,12 +4,19 @@
 
     <h1>Create Course</h1>
 </section>
+
+
     <!-- Create Course -->
     <section class="about-us">
         <div class="row">
-            <div class="about-col">
-                <main>
-                <h1> <span>Create Course</span> </h1>
+            <div class="contact-us-col">
+                <div class="about-col">
+                <img src="/images/li-yang-5h_dMuX_7RE-unsplash.jpg" alt="a colorful rainbow fish">
+            </div>
+            </div>
+
+            <div class="contact-us-col">
+
                 <form action="/courses" method="POST">
                 <div>
                     <label for="courseName">CourseName: </label>
@@ -17,7 +24,7 @@
                 </div>
 
                 <div>
-                    <label for="about">About the course: </label>
+                    <label for="about">course Description: </label>
                     <input type="text" name="about" id="about" minlength="5" required />
                 </div>
 
@@ -33,19 +40,16 @@
 
                 <div>
                     <label for="moreInfor">More about the course:</label>
-                    <textarea class="text-area-label" name="moreInfor" id="moreInfor" placeholder="moreInfor"></textarea>
+                    <textarea  rows="8" class="text-area-label" name="moreInfor" id="moreInfor" placeholder="More about the course"></textarea>
                 </div>
 
                 <div>
-                    <input type="submit" value="Submit"/>
+                    <button type="submit" class="call-to-action-btn red-btn">Submit</button>
                 </div>
 
             </form>
-            </main>
             </div>
-            <div class="about-col">
-                <img src="/images/Screen Shot 2023-02-25 at 3.38.52 PM.png" alt="a colorful rainbow fish">
-            </div>
+
         </div>
     </section>
 

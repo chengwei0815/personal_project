@@ -6,22 +6,26 @@
 
     </section>
 
-    <section class="programs">
-        <h3><%= serviceItem.serviceName %></h3>
-
+    <section class="community-content">
         <div class="row">
-             <h3><%= serviceItem.serviceName %></h3>
-          <p>Service Detail</p>
+        <div class="community-left">
+             <h2><%= serviceItem.serviceName %></h2>
+            <p><strong>Course Name: </strong><%= serviceItem.serviceName %></p>
+            <p><strong>About the Course:</strong> <%= serviceItem.content %></p>
+            <a href="/services" class="call-to-action-btn red-btn">Back to Services</a>
+        </div>
+        <div class="community-right">
+            <div class="about-col">
+            <img src="/images/rafik-wahba-LkyYLdL3WxE-unsplash.jpg" alt="a colorful rainbow fish">
+            </div>
+        </div>
+
         </div>
     </section>
 
-    <main>
-    <p><strong>Course Name: </strong><%= serviceItem.serviceName %></p>
-    <p><strong>About the Course:</strong> <%= serviceItem.content %></p>
 
 
-    <a href="/services" class="btn">back to services</a>
-    </main>
+
 
 
 <%- include('../partials/footer') -%>

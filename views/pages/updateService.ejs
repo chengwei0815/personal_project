@@ -5,11 +5,15 @@
     <h1>Update Services</h1>
 </section>
     <!-- Create Course -->
-    <section class="about-us">
+<section class="about-us">
         <div class="row">
-            <div class="about-col">
-                <main>
-                <h1> <span>Update Services</span> </h1>
+            <div class="contact-us-col">
+                <div class="about-col">
+                <img src="/images/emmanuel-appiah-lTPZkeotdb4-unsplash.jpg" alt="a colorful rainbow fish">
+            </div>
+            </div>
+
+            <div class="contact-us-col">
                 <form action="/services/<%= foundService._id %>?_method=PUT" method="POST">
                 <div>
                     <label for="serviceName">serviceName: </label>
@@ -18,19 +22,16 @@
 
                 <div>
                     <label for="content">About the course: </label>
-                    <input type="text" name="content" id="content" minlength="5" value="<%= foundService.content %>" required />
+                    <textarea rows="8" class="text-area-label" name="moreInfor" id="moreInfor" placeholder="moreInfor"><%= foundService.content %>" </textarea>
                 </div>
 
                 <div>
-                    <input type="submit" value="Submit"/>
+                    <button type="submit" class="call-to-action-btn red-btn">Submit</button>
                 </div>
 
             </form>
-            </main>
-            </div>
-            <div class="about-col">
-                <img src="/images/Screen Shot 2023-02-25 at 3.38.52 PM.png" alt="a colorful rainbow fish">
-            </div>
+</div>
+
         </div>
     </section>
 
