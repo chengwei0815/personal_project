@@ -1,0 +1,32 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-tower-admin') -%>
+
+     <h1>Admin - Services</h1>
+
+    </section>
+
+    <!-- Programs Offered for Children-->
+    <section class="main-content" id="main-content">
+        <div class="main-content-layout">
+
+        <% for (service of serviceArray)  { %>
+        <div class="box">
+        <div class="content">
+
+            <h2><%= service.serviceName %></h2>
+            <a href="./<%= service._id %>/edit-service" class="call-to-action-btn red-btn">Edit</a>
+
+            <form action="/services/<%= service._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+                <button class="call-to-action-btn red-btn" type="submit">Delete</button>
+            </form>
+        </div>
+        </div>
+        <% } %>
+
+        </div>
+    </section>
+
+
+
+<%- include('../partials/footer') -%>

@@ -1,0 +1,31 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-leaf') -%>
+
+     <h1>Services Detail</h1>
+
+    </section>
+
+    <section class="community-content">
+        <div class="row">
+        <div class="community-left">
+             <h2><%= serviceItem.serviceName %></h2>
+            <p><strong>Course Name: </strong><%= serviceItem.serviceName %></p>
+            <p><strong>About the Course:</strong> <%= serviceItem.content %></p>
+            <a href="/services" class="call-to-action-btn red-btn">Back to Services</a>
+        </div>
+        <div class="community-right">
+            <div class="about-col">
+            <img src="/images/rafik-wahba-LkyYLdL3WxE-unsplash.jpg" alt="a colorful rainbow fish">
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+<%- include('../partials/footer') -%>

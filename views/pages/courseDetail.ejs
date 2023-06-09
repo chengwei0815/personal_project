@@ -1,0 +1,31 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-leaf') -%>
+
+     <h1>Course Detail</h1>
+
+    </section>
+
+    <section class="community-content">
+        <div class="row">
+        <div class="community-left">
+            <h2><%= courseItem.courseName %></h2>
+            <p><strong>Course Name: </strong><%= courseItem.courseName %></p>
+            <p><strong>Course Description:</strong> <%= courseItem.about %></p>
+            <p><strong>Date and Time:</strong> $<%= courseItem.date %></p>
+            <p><strong>Location:</strong> <%= courseItem.location %></p>
+            <p><strong>More Information about the Course:</strong> <%= courseItem.moreInfor %></p>
+            <a href="/courses" class="call-to-action-btn red-btn">Back to Courses</a>
+        </div>
+
+        <div class="community-right">
+            <div class="about-col">
+            <img src="/images/oriento-gy_DN08336U-unsplash.jpg" alt="a colorful rainbow fish">
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+<%- include('../partials/footer') -%>

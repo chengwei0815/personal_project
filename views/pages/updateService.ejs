@@ -1,0 +1,39 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-tower-admin') -%>
+
+    <h1>Update Services</h1>
+</section>
+    <!-- Create Course -->
+<section class="about-us">
+        <div class="row">
+            <div class="contact-us-col">
+                <div class="about-col">
+                <img src="/images/emmanuel-appiah-lTPZkeotdb4-unsplash.jpg" alt="a colorful rainbow fish">
+            </div>
+            </div>
+
+            <div class="contact-us-col">
+                <form action="/services/<%= foundService._id %>?_method=PUT" method="POST">
+                <div>
+                    <label for="serviceName">serviceName: </label>
+                    <input type="text" name="serviceName" id="serviceName" minlength="1" value="<%= foundService.serviceName %>" required />
+                </div>
+
+                <div>
+                    <label for="content">About the course: </label>
+                    <textarea rows="8" class="text-area-label" name="moreInfor" id="moreInfor" placeholder="moreInfor"><%= foundService.content %>" </textarea>
+                </div>
+
+                <div>
+                    <button type="submit" class="call-to-action-btn red-btn">Submit</button>
+                </div>
+                <a href="/admin/admin-services" class="call-to-action-btn red-btn">Back to Admin - Services</a>
+
+            </form>
+</div>
+
+        </div>
+    </section>
+
+<%- include('../partials/footer') -%>

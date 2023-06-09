@@ -1,0 +1,28 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar-tower-admin') -%>
+
+     <h1>Admin - Courses</h1>
+
+    </section>
+
+    <!-- Programs Offered for Children-->
+    <section class="main-content" id="main-content">
+        <div class="main-content-layout">
+
+        <% for (course of courseArray)  { %>
+            <div class="box">
+            <div class="content">
+                <h2><%= course.courseName %></h2>
+                <a href="./<%= course._id %>/edit-course" class="call-to-action-btn red-btn">Edit</a>
+
+                <form action="/courses/<%= course._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+                    <button class="call-to-action-btn red-btn" type="submit">Delete</button>
+                </form>
+            </div>
+            </div>
+        <% } %>
+        </div>
+    </section>
+
+<%- include('../partials/footer') -%>
