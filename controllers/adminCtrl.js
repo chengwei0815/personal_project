@@ -4,14 +4,34 @@ const Service = require("../models/serviceModel");
 
 module.exports = {
   admin: (request, response) => {
-    // if (request.isAuthenticated()) {
-      response.render("pages/admin", {
-        copyrightYear: siteData.year,
-      });
-    // } else {
-    //   console.log("There is an error.");
-    //   response.redirect("/login");
-    // }
+    if (request.isAuthenticated()) {
+    response.render("pages/admin", {
+      copyrightYear: siteData.year,
+    });
+    } else {
+      console.log("There is an error.");
+      response.redirect("/login");
+    }
+  },
+
+  // save the user data when they login
+  login: (request, response) => {
+    response.render("pages/login", {
+      // data: data
+    });
+    const { username, password, googleId } = req.body;
+    const userSchema = new Schema({
+      username: {
+        type: String,
+      },
+      password: {
+        type: String,
+      },
+      googleId: {
+        type: String,
+      },
+    });
+    newSchema.save();
   },
 
   logout: (request, response) => {

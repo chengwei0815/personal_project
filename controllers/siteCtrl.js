@@ -1,6 +1,6 @@
-const User = require('../models/userModel');
+const User = require("../models/userModel");
 const siteData = require("../data/siteData");
-const passport = require('passport');
+const passport = require("passport");
 
 module.exports = {
   index: (request, response) => {
@@ -23,6 +23,11 @@ module.exports = {
         if (error) {
           console.log(error);
           response.redirect("/register");
+        } else if (
+          request.body.role === "student" ||
+          request.body.role === "parent"
+        ) {
+          response.redirect("/register-error");
         } else {
           passport.authenticate("local")(request, response, () => {
             response.redirect("/login");
@@ -31,6 +36,11 @@ module.exports = {
       }
     );
   },
+
+  register_error: (request, response) => {
+    response.render("pages/registerError");
+  },
+
   login_get: (request, response) => {
     response.render("pages/login", {
       copyrightYear: siteData.year,

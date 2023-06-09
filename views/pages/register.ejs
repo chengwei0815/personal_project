@@ -1,0 +1,62 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/navbar-tower-admin') -%>
+
+<!-- main-content section starts  -->
+<h1>Register</h1>
+
+</section>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Register</h1>
+            <p>
+            <form class="comment-form" action="/register" method="POST">
+                <div>
+                    <label for="username">Username </label>
+                    <input type="text" name="username" id="username" required />
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" required />
+                </div>
+                <div>
+                    <label for="administration">Administration: </label>
+                    <input type="radio" value="administration" id="administration" name="role">
+                </div>
+                <div>
+                    <label for="teacher">Teacher: </label>
+                    <input type="radio" value="teacher" id="teacher" name="role">
+                </div>
+                <div>
+                    <label for="student">Student: </label>
+                    <input type="radio" value="student" id="student" name="role">
+                </div>
+                <div>
+                    <label for="parent">Parent: </label>
+                    <input type="radio" value="parent" id="parent" name="role">
+                </div>
+
+                <div>
+
+                    <button type="submit" class="call-to-action-btn red-btn" value="Submit">Submit</button>
+                </div>
+
+                <button>
+                    <a class="call-to-action-btn" href="/auth/google" role="button">Login with Google</a>
+                </button>
+
+                <p>Don't Have An Account? <a href="/register">Create one here.</a> </p>
+            </form>
+            </p>
+        </div>
+
+        <div class="about-col">
+            <img src="/images/lin-qiang-SEYO0Botkgc-unsplash.jpg" alt="a colorful rainbow fish">
+        </div>
+    </div>
+</section>
+
+
+<!-- main-content section ends -->
+
+<%- include('../partials/footer') -%>
